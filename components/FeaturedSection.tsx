@@ -23,11 +23,11 @@ const FeaturedSection = () => {
     const featuredCourses = courseData.courses.filter((course: Course) => course.isFeatured);
 
     return (
-        <div>
-            <div>
+        <div className='flex flex-col flex-wrap'>
+            <div className='hidden sm:flex'>
                 <LampDemo />
             </div>
-
+            <h1 className='sm:hidden text-xl font-semibold text-amber-200 text-center mb-3'>FEATURED COURSES</h1>
             <p className='text-center text-3xl font-semibold'>Learn With the Best</p>
             <div className='mt-3 flex flex-wrap gap-3 p-4 justify-center'>
                 {featuredCourses.map((course: Course) => (
