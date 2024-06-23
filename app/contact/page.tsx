@@ -16,7 +16,7 @@ const ContactUs: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen">
-       <Meteors number={40} />
+      <Meteors number={40} />
       <form
         className="bg-black/[.96] p-6 rounded-lg shadow-lg w-1/2"
         onSubmit={handleSubmit}
@@ -39,7 +39,8 @@ const ContactUs: React.FC = () => {
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black
+            "
             rows={4}
             required
           ></textarea>

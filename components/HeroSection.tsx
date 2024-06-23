@@ -17,7 +17,7 @@ const HeroSection = () => {
                 <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">Master the art of music</h1>
                 <p className='mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto'>
                     Dive into our comprehensive music courses and
-                    tranform your musical journey today. Whether you're
+                    tranform your musical journey today. Whether you&apos;re
                     abeginner or looking to refine your skills,join us
                     to unlock your true potential.
                 </p>
