@@ -1,7 +1,6 @@
-
 'use client'
-import { Meteors } from '@/components/ui/meteors';
 import React, { useState, FormEvent } from 'react';
+import { Meteors } from '@/components/ui/meteors';
 
 const ContactUs: React.FC = () => {
   const [email, setEmail] = useState<string>('');
@@ -15,13 +14,13 @@ const ContactUs: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen">
+    <div className="relative flex items-center justify-center min-h-screen overflow-hidden bg-black">
       <Meteors number={40} />
       <form
-        className="bg-black/[.96] p-6 rounded-lg shadow-lg w-1/2"
+        className="relative bg-black/[.96] p-2 sm:p-6 rounded-lg shadow-lg w-full m-2 sm:w-1/2 z-10"
         onSubmit={handleSubmit}
       >
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <h2 className="text-2xl font-bold mb-4 text-white">Contact Us</h2>
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm font-medium text-gray-300">Email:</label>
           <input
@@ -39,8 +38,7 @@ const ContactUs: React.FC = () => {
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black
-            "
+            className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
             rows={4}
             required
           ></textarea>
@@ -56,6 +54,4 @@ const ContactUs: React.FC = () => {
   );
 };
 
-
 export default ContactUs;
-
