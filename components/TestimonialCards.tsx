@@ -41,11 +41,7 @@ const TestimonialCards = () => {
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]">
             </div>
             <div className="flex flex-col flex-wrap">
-                <div className="text-center">
-                    <h1 className="text-center p-4  text-2xl sm:text-3xl font-bold mx-4">Hear Our Harmony :<br /> Voices of Success</h1>
-                </div>
-
-
+                <h1 className="text-center p-4  text-2xl sm:text-3xl font-bold mx-4">Hear Our Harmony :<br /> Voices of Success</h1>
                 <div >
                     <InfiniteMovingCards
                         items={testimonials}
